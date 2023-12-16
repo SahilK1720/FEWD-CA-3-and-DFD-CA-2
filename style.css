@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Itim&family=Nunito+Sans:opsz@6..12&family=Poppins&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-image: url(./assets/bg2.png);
+    font-family: 'Itim', cursive;
+}
+
+.header{
+    background-color: red;
+}
+
+.logo{
+    margin-top: -10px;
+    margin-left: 2vh;
+    height: 23vh;
+    width: 36vh;
+}
+
+.plate{
+    display: flex;
+    justify-content: space-around;
+}
+
+.plate-img{
+    height: 80vh;
+    width: 80vh;
+    padding-right: 7vh;
+    flex-shrink: 0;
+}
+
+.plate-div{
+    margin-top: -10vh;
+}
+
+.tagline{
+    font-size: 8vh;
+    padding-left: 5vh;
+}
+
+.description{
+    font-size: 3.4vh;
+    padding-left: 5vh;
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    
+}
+input{
+    width: 429.6px;
+    height: 73.19px;
+    flex-shrink: 0;
+    border-radius: 45px;
+    border: none;
+    background: #D9D9D9;
+    padding-left: 2vw;
+    box-shadow: 6px 11px 11.4px 0px rgba(0, 0, 0, 0.25);
+    color: #444;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+button{
+    width: 128.4px;
+    height: 53.585px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 45px;
+    background: #F7B85B;
+    box-shadow: 3px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    color: #444;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 1.4vh;
+    margin-left: 2vh;
+}
+
+button[type="submit"]:hover {
+    background-color: #e6a43b;
+}
+
+.search-text{
+    text-align: center;
+    color: #444;
+    font-size: 43px;
+    font-weight: 400;
+}
+
