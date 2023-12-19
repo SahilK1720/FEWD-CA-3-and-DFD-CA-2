@@ -12,11 +12,13 @@
 <body>
     <div id="overlay" onclick="off()"></div>
 
+    <!-- Header section with navigation and branding -->
     <section id="header">
         <nav>
             <img class="logo" src="./assets/logo.png" alt="Chef's Canvas Logo">
         <nav>
 
+        <!-- Main tagline, description and image area -->
         <div class="plate">
             <div>
                 <h2 class="tagline">Discover. Grill. Distribute.</h2>
@@ -28,6 +30,7 @@
             </div>
         </div>
 
+        <!-- Search section for recipes -->
         <div class="search-section">
             <p class="search-text">Search Your Favorite Dish Here</p>
 
@@ -46,11 +49,13 @@
     <br><br>
     <div class="divide-line"></div>
 
+    <!-- Main container for displaying meals -->
     <section class="main-container">
         <div>
         <h1>Popular Meal</h1>
         </div>
 
+        <!-- Random meal section -->
         <section id="random-meal">
             <!-- <div class="card">
                 <div class="card-image">
@@ -69,6 +74,7 @@
         <h1>Searched Meals</h1>
         </div>
 
+        <!-- Searched meals section -->
         <section class="cards-container container flex" id="cards-container">   
             <p>Search above to find some tasty recipes🤞</p> 
             <!-- <div class="card flex" id="popular-card">
@@ -82,29 +88,37 @@
         </section>
     </section>
 
+    <!-- Modal for displaying recipe details -->
     <section id="modal-container">
         <div id="modal-inner" class="modal-inner hidden">
-            <div class="modal-img-container">
-                <img class="modal-img" src="./assets/bg1.png" alt="">
+            <div id="modal-img-container" class="modal-img-container">
+                <img class="modal-img" >
             </div>
 
-            <div class="modal-ingredients">
+            <div id="modal-ingredients" class="modal-ingredients">
                 <ul title="Ingredients List:">
-                    <li>sad</li>
+                    <!-- <li>sad</li>
                     <li>asd</li>
                     <li>asd</li>
                     <li>asd</li>
                     <li>asd</li>
                     <li>afeef</li>
+                    <li>sad</li>
+                    <li>asd</li>
+                    <li>asd</li>
+                    <li>asd</li>
+                    <li>asd</li>
+                    <li>afeef</li> -->
                 </ul>
             </div>
 
             <div class="close-section">
-                <button class="close-btn">Close</button>
+                <button id="close-btn" class="close-btn">Close</button>
             </div>
         </div>
     </section>
 
+     <!-- Footer section -->
     <footer>
         <div>
             <p>Made by Sahil Kharatmol</p>
