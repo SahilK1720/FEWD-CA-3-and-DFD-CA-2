@@ -4,30 +4,37 @@ const popularMealSection = document.getElementById('random-meal');
 const searchedMealsSection = document.getElementById('cards-container');
 const modalInner = document.getElementById("modal-inner");
 
+
+// Event listener for window load to fetch a random recipe
 window.addEventListener('load', () =>{
     fetchRecipeRandomData();
 })
 
+// Event listener for the search button
 searchBtn.addEventListener('click', (e) => {
     e.preventDefault();
     const userInput = searchInputField.value;
     fetchRecipeData(userInput);
 });
 
+// Event listener for closing the modal
 document.getElementById('close-btn').addEventListener('click', (e) => {
     modalInner.classList.add('hidden');
 })
 
+// Async Function to fetch recipes based on user input
 const fetchRecipeData = async (userInput) => {
     try {
-        const apiResponse = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${userInput}`);
+        const apiResponse = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${userInput}`);
         const recipesData = await apiResponse.json();
+        console.log(recipesData)
         renderRecipes(recipesData.meals);
     } catch (error) {
         console.error('Error while fetching recipes:', error);
     }
 };
 
+// Async Function to fetch a random recipe
 const fetchRecipeRandomData = async () => {
     try {
         const res = await fetch(`https://www.themealdb.com/api/json/v1/1/random.php`);
@@ -38,6 +45,7 @@ const fetchRecipeRandomData = async () => {
     }
 };
 
+// Function to render a random recipe and display the data
 const renderRandomRecipes = (randomMealData) => {
     // Clear previous content
     popularMealSection.innerHTML = '';
@@ -61,7 +69,6 @@ const renderRandomRecipes = (randomMealData) => {
 
     viewRecipeBtn.addEventListener('click', (e) => {
         modalInner.classList.remove('hidden');
-        // document.getElementById("overlay").style.display = "block";
     })
 
     displayIngredients(randomMealData.idMeal, randomMealData.strMealThumb );
@@ -69,6 +76,8 @@ const renderRandomRecipes = (randomMealData) => {
     popularMealSection.appendChild(mealCard);
 };
 
+
+// Function to render searched recipes and display the data
 const renderRecipes = (mealData) => {
     // Clear previous content
     searchedMealsSection.innerHTML = '';
@@ -94,6 +103,8 @@ const renderRecipes = (mealData) => {
     });
 };
 
+
+// Function to display ingredients of the random meal
 const displayIngredients = async (mealId, imageUrl) => {
     try {
         const apiResponse = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`);
@@ -122,9 +133,6 @@ const displayIngredients = async (mealId, imageUrl) => {
 
 
 
-function off() {
-    document.getElementById("overlay").style.display = "none";
-  }
 
 
 
