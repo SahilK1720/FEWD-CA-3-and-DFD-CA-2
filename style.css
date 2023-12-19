@@ -14,6 +14,7 @@ body {
 }
 
 
+/* start of header section */
 .logo{
     margin-top: -10px;
     margin-left: 2vh;
@@ -29,7 +30,7 @@ body {
 .plate-img{
     height: 85vh;
     width: 92vh;
-    padding-right: 7vh;
+    padding-right: 5vh;
     flex-shrink: 0;
 }
 
@@ -51,6 +52,8 @@ body {
     line-height: 5.6vh;
 }
 
+
+/* search section */
 .search-section{
     margin-top: 6vh;
 }
@@ -72,7 +75,7 @@ input{
     padding-left: 2vw;
     box-shadow: 6px 11px 11.4px 0px rgba(0, 0, 0, 0.25);
     color: #444;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 400;
     font-family: 'Itim', cursive;
 }
@@ -110,6 +113,7 @@ button{
     opacity: 1;
 }
 
+/* Styling for the divider line */
 .divide-line{
     width: 100%;
     height: 0.5vh;
@@ -117,12 +121,14 @@ button{
     margin-bottom: 5vh;
     margin-top: 2vh;
 }
+/* end of header section */
 
+
+/* start of random meal section and searched meals section */
 #random-meal{
     display: flex;
     justify-content: center;
 }
-
 
 h1{
     text-align: center;
@@ -195,6 +201,9 @@ h3{
     padding: 12px;
 }
 
+/* end of random meal and searched meals section */
+
+/* modal section */
 .modal-inner{
     display: flex;
     flex-direction: column;
@@ -251,20 +260,8 @@ ul{
 .close-section{
     align-self: end;
 }
+/* end of modal section */
 
-#overlay {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
-}
 
 footer{
     display: flex;
@@ -276,7 +273,9 @@ footer{
     height: 6vh;
     background-color: #f19c1c;;
 }
-  
+
+
+/* animation for search button */
 @keyframes pulsate {
     0% {
       transform: scale(1);
@@ -349,10 +348,12 @@ footer{
         width: 47vw;
     }
   }
+
+  /* for screens below 768px */
   @media screen and (max-width: 768px){
     .plate-img{
         height: 78vh;
-        width: 78vh;
+        width: 86vh;
     }
 
     .modal-inner{
@@ -373,7 +374,7 @@ footer{
     input{
         width: 349.6px;
         height: 53.19px;
-        font-size: 20px;
+        font-size: 18px;
     } 
 
     .search-text{
@@ -393,8 +394,7 @@ footer{
         width: 85vh;
         padding-right: 4vh;
     }
-
-    
+  
     .modal-inner{
         top: 220%;
         width: 77vw;
@@ -445,7 +445,7 @@ footer{
     }
 
     .search-text{
-        font-size: 30px;
+        font-size: 26px;
     }
 
     button{
@@ -457,7 +457,7 @@ footer{
     input{
         width: 269.6px;
         height: 53.19px;
-        font-size: 15px;
+        font-size: 14px;
     } 
   }
 
@@ -473,7 +473,7 @@ footer{
     }
 
     input{
-        width: 210.6px;
+        width: 242.6px;
         height: 43.19px;
         font-size: 13px;
     } 
