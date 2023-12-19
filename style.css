@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Itim&family=Nunito+Sans:opsz@6..12&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Itim&family=Montez&family=Nunito+Sans:opsz@6..12&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Arial', sans-serif;
@@ -7,9 +13,6 @@ body {
     font-family: 'Itim', cursive;
 }
 
-.header{
-    background-color: red;
-}
 
 .logo{
     margin-top: -10px;
@@ -24,8 +27,8 @@ body {
 }
 
 .plate-img{
-    height: 80vh;
-    width: 80vh;
+    height: 85vh;
+    width: 92vh;
     padding-right: 7vh;
     flex-shrink: 0;
 }
@@ -35,22 +38,30 @@ body {
 }
 
 .tagline{
-    font-size: 8vh;
-    padding-left: 5vh;
+    font-size: 9vh;
+    padding-left: 7vh;
+    padding-top: 7.5vh;
 }
 
 .description{
-    font-size: 3.4vh;
-    padding-left: 5vh;
+    color: #646363;
+    font-size: 3.6vh;
+    padding-left: 7vh;
+    padding-top: 4vh;
+    line-height: 5.6vh;
+}
+
+.search-section{
+    margin-top: 6vh;
 }
 
 #search{
+    margin-top: 2vh;
     display: flex;
     justify-content: center;
     align-self: center;
-
-    
 }
+
 input{
     width: 429.6px;
     height: 73.19px;
@@ -63,6 +74,7 @@ input{
     color: #444;
     font-size: 25px;
     font-weight: 400;
+    font-family: 'Itim', cursive;
 }
 
 button{
@@ -71,24 +83,431 @@ button{
     flex-shrink: 0;
     border: none;
     border-radius: 45px;
-    background: #F7B85B;
+    background: #f19c1c;
     box-shadow: 3px 8px 4px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     color: #444;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 1.4vh;
     margin-left: 2vh;
-}
-
-button[type="submit"]:hover {
-    background-color: #e6a43b;
+    font-family: 'Itim', cursive;
 }
 
 .search-text{
     text-align: center;
     color: #444;
-    font-size: 43px;
+    font-size: 45px;
     font-weight: 400;
 }
+
+#search-button:hover {
+    background-color: #d58f26;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    animation: 1s ease 0s normal none pulsate;
+    opacity: 1;
+}
+
+.divide-line{
+    width: 100%;
+    height: 0.5vh;
+    background-color: white;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+}
+
+#random-meal{
+    display: flex;
+    justify-content: center;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 2.3rem;
+    margin-block: 4vh;
+}
+
+.view-card-recipe{
+    padding-bottom: 3vh;
+}
+
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 2vw;
+    column-gap: 2vw;
+    align-items: start;
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #a8b5bc;
+    transform: translateY(-2px);
+}
+
+.card-image{
+    padding: 2vh;
+}
+
+.card-image img {
+    border-radius: 10px;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+h3{
+    text-align: center;
+    padding-inline: 1vh;
+    font-family: 'Montez', cursive;
+    font-size: 3rem;
+    text-wrap: wrap;
+    padding-bottom: 2.5vh;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.modal-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: start;
+    background-color: #f3e0b5;
+    border: 4px solid rgb(78, 50, 4);
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 15px;
+    width: 37vw; 
+    height: auto;
+}
+
+.hidden{
+    display: none;
+}
+
+.modal-container{
+    background-color: #646363;
+}
+
+.modal-img{
+    height: 40%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.modal-ingredients{
+    align-self: start;
+    padding-left: 12%;
+}
+
+ul[title]::before {
+    content: attr(title);
+    display: block;
+    font-weight: bold;
+    margin-left: -50px;
+    font-size: 2.4rem;
+    padding-bottom: 3vh;
+}
+
+ul{
+    text-align: start;
+    font-size: 2rem;
+}
+
+.close-btn{
+    background-color: red;
+}
+
+.close-section{
+    align-self: end;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 4vh;
+    height: 6vh;
+    background-color: #f19c1c;;
+}
+  
+@keyframes pulsate {
+    0% {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }
+
+  @media screen and (max-width: 1000px){
+    .plate{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 16vh;
+        padding-right: 3vh;
+    }
+
+    .plate-img{
+        height: 85vh;
+        width: 85vh;
+        padding-right: 1vh;
+        flex-shrink: 0;
+    }
+
+    .tagline{
+        font-size: 8vh;
+        padding-left: 5vh;
+        padding-top: 7.5vh;
+    }
+    
+    .description{
+        color: #646363;
+        font-size: 3.4vh;
+        padding-left: 5vh;
+        padding-top: 4vh;
+        line-height: 5.6vh;
+    }
+
+    .search-text{
+        font-size: 40px;
+    }
+
+    button{
+        width: 108.4px;
+        height: 53.585px;
+        margin-top: 0.8vh;
+    }
+
+    input{
+        width: 389.6px;
+        height: 63.19px;
+    }    
+
+    .modal-inner{
+        top: 210%;
+        width: 47vw;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .plate-img{
+        height: 78vh;
+        width: 78vh;
+        padding-right: 1vh;
+        flex-shrink: 0;
+    }
+
+    .modal-inner{
+        top: 210%;
+        width: 57vw;
+    }
+  }
+
+  @media screen and (max-width: 630px){
+
+    button{
+        width: 88.4px;
+        height: 45.585px;
+        margin-top: 0.8vh;
+        font-size: 15px;
+    }
+
+    input{
+        width: 349.6px;
+        height: 53.19px;
+        font-size: 20px;
+    } 
+
+    .search-text{
+        font-size: 35px;
+    }
+
+    .modal-inner{
+        top: 210%;
+        width: 67vw;
+    }
+  }
+
+  @media screen and (max-width: 530px){
+
+    
+    .modal-inner{
+        top: 220%;
+        width: 77vw;
+    }
+    .plate-img{
+        height: 58vh;
+        width: 58vh;
+        padding-right: 1vh;
+        flex-shrink: 0;
+    }
+
+    .tagline{
+        font-size: 7vh;
+        padding-left: 5vh;
+        padding-top: 7.5vh;
+    }
+    
+    .description{
+        color: #646363;
+        font-size: 2.7vh;
+        padding-left: 5vh;
+        padding-top: 4vh;
+        line-height: 5.6vh;
+    }
+
+    .view-recipe{
+        font-size: 2vh;
+    }
+
+  }
+
+  @media screen and (max-width: 450px){
+
+    
+    .modal-inner{
+        top: 220%;
+        width: 81vw;
+    }
+
+    .plate-img{
+        height: 58vh;
+        width: 58vh;
+        padding-right: 1vh;
+        flex-shrink: 0;
+    }
+
+    .search-text{
+        font-size: 30px;
+    }
+
+    button{
+        width: 98.4px;
+        height: 43.585px;
+        margin-top: 0.8vh;
+    }
+
+    input{
+        width: 269.6px;
+        height: 53.19px;
+        font-size: 15px;
+    } 
+  }
+
+  @media screen and (max-width: 400px){
+
+
+
+
+    .search-text{
+        font-size: 25px;
+    }
+
+    button{
+        width: 88.4px;
+        height: 33.585px;
+        margin-top: 0.8vh;
+    }
+
+    input{
+        width: 210.6px;
+        height: 43.19px;
+        font-size: 13px;
+    } 
+  }
+
+  @media screen and (max-width: 300px){
+    .plate-img{
+        height: 30vh;
+        width: 30vh;
+        flex-shrink: 0;
+    }
+
+    .search-text{
+        font-size: 25px;
+    }
+
+    button{
+        width: 68.4px;
+        height: 23.585px;
+        margin-top: 0.8vh;
+    }
+
+    input{
+        width: 110.6px;
+        height: 33.19px;
+        font-size: 13px;
+    } 
+  }
+
 
