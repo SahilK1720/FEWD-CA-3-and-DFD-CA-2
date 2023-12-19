@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chef's Canvas</title>
+    <link rel="icon" href="./assets/2-removebg-preview.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
+
 <body>
+    <div id="overlay" onclick="off()"></div>
+
     <section id="header">
         <nav>
             <img class="logo" src="./assets/logo.png" alt="Chef's Canvas Logo">
@@ -14,7 +19,7 @@
 
         <div class="plate">
             <div>
-                <h1 class="tagline">Discover. Grill. Distribute.</h1>
+                <h2 class="tagline">Discover. Grill. Distribute.</h2>
                 <p class="description">Welcome to Chef's Canvas, a vibrant culinary destination where flavors meet creativity, and every dish tells a story. Our website is a treasure trove of recipes, each a masterpiece waiting to be recreated in your kitchen.</p>
             </div>
 
@@ -23,21 +28,88 @@
             </div>
         </div>
 
-        <p class="search-text">Search Your Favorite Dish Here</p>
+        <div class="search-section">
+            <p class="search-text">Search Your Favorite Dish Here</p>
 
-        <div id="search">
-            <div>
-                <input id="input-value" type="text" placeholder="Search your recipe here..." name="search">
+            <div id="search">
+                <div>
+                    <input id="input-value" type="text" placeholder="Search your recipe by name here..." name="search">
+                </div>
+                
+                <div>
+                    <button id="search-button" type="submit">Search</button>
+                </div>
             </div>
-            
-            <div>
-                <button id="search-button" type="submit">Search</button>
+        </div>
+    </section>
+
+    <br><br>
+    <div class="divide-line"></div>
+
+    <section class="main-container">
+        <div>
+        <h1>Popular Meal</h1>
+        </div>
+
+        <section id="random-meal">
+            <!-- <div class="card">
+                <div class="card-image">
+                    <img src="./assets/bg1.png" alt="">
+                </div>
+                <div id="card-text">
+                    <h3>Mexican Chicken</h3>
+                </div>
+            </div> -->
+        </section>
+
+        <br><br>
+        <div class="divide-line"></div>
+
+        <div>
+        <h1>Searched Meals</h1>
+        </div>
+
+        <section class="cards-container container flex" id="cards-container">   
+            <p>Search above to find some tasty recipes🤞</p> 
+            <!-- <div class="card flex" id="popular-card">
+                <div class="card-image">
+                    <img src="./assets/bg1.png" alt="">
+                </div>
+                <div id="card-text">
+                    <h3>Mexican Chicken</h3>
+                </div>
+            </div> -->
+        </section>
+    </section>
+
+    <section id="modal-container">
+        <div id="modal-inner" class="modal-inner hidden">
+            <div class="modal-img-container">
+                <img class="modal-img" src="./assets/bg1.png" alt="">
+            </div>
+
+            <div class="modal-ingredients">
+                <ul title="Ingredients List:">
+                    <li>sad</li>
+                    <li>asd</li>
+                    <li>asd</li>
+                    <li>asd</li>
+                    <li>asd</li>
+                    <li>afeef</li>
+                </ul>
+            </div>
+
+            <div class="close-section">
+                <button class="close-btn">Close</button>
             </div>
         </div>
     </section>
 
     <footer>
-        Made by Sahil Kharatmol
+        <div>
+            <p>Made by Sahil Kharatmol</p>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
