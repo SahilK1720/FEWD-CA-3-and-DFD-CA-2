@@ -134,13 +134,6 @@ h1{
     padding-bottom: 3vh;
 }
 
-
-
-.flex {
-    display: flex;
-    align-items: center;
-}
-
 .container {
     max-width: 1180px;
     margin: 0 auto;
@@ -208,6 +201,7 @@ h3{
     align-items: center;  
     justify-content: start;
     background-color: #f3e0b5;
+    box-shadow: 0px 0px 200px 200px rgba(108, 106, 106, 0.3);
     border: 4px solid rgb(78, 50, 4);
     position: absolute;
     top: 170%;
@@ -221,10 +215,6 @@ h3{
 
 .hidden{
     display: none;
-}
-
-.modal-container{
-    background-color: #646363;
 }
 
 .modal-img{
@@ -243,17 +233,19 @@ ul[title]::before {
     display: block;
     font-weight: bold;
     margin-left: -50px;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     padding-bottom: 3vh;
+    padding-top: 2vh;
 }
 
 ul{
     text-align: start;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .close-btn{
     background-color: red;
+    color: white;
 }
 
 .close-section{
@@ -321,8 +313,6 @@ footer{
     .plate-img{
         height: 85vh;
         width: 85vh;
-        padding-right: 1vh;
-        flex-shrink: 0;
     }
 
     .tagline{
@@ -363,8 +353,6 @@ footer{
     .plate-img{
         height: 78vh;
         width: 78vh;
-        padding-right: 1vh;
-        flex-shrink: 0;
     }
 
     .modal-inner{
@@ -400,51 +388,60 @@ footer{
 
   @media screen and (max-width: 530px){
 
+    .plate-img{
+        height: 85vh;
+        width: 85vh;
+        padding-right: 4vh;
+    }
+
     
     .modal-inner{
         top: 220%;
         width: 77vw;
     }
     .plate-img{
-        height: 58vh;
-        width: 58vh;
-        padding-right: 1vh;
-        flex-shrink: 0;
+        height: 48vh;
+        width: 48vh;
     }
 
     .tagline{
         font-size: 7vh;
-        padding-left: 5vh;
-        padding-top: 7.5vh;
     }
     
     .description{
-        color: #646363;
         font-size: 2.7vh;
-        padding-left: 5vh;
-        padding-top: 4vh;
-        line-height: 5.6vh;
     }
 
     .view-recipe{
         font-size: 2vh;
     }
 
+    ul[title]::before {
+        font-size: 1.7rem;
+        padding-left: 1vh;
+    }
+
+    ul li{
+        font-size: 1rem;
+    }
+
   }
 
   @media screen and (max-width: 450px){
 
-    
+    .plate-img {
+        height: 48vh;
+        width: 48vh;
+        padding-right: 1vh 
+    }
+
+    .view-recipe{
+        font-size: 0.8rem;
+    }
+
     .modal-inner{
         top: 220%;
         width: 81vw;
-    }
-
-    .plate-img{
-        height: 58vh;
-        width: 58vh;
-        padding-right: 1vh;
-        flex-shrink: 0;
     }
 
     .search-text{
@@ -465,10 +462,6 @@ footer{
   }
 
   @media screen and (max-width: 400px){
-
-
-
-
     .search-text{
         font-size: 25px;
     }
@@ -490,7 +483,6 @@ footer{
     .plate-img{
         height: 30vh;
         width: 30vh;
-        flex-shrink: 0;
     }
 
     .search-text{
