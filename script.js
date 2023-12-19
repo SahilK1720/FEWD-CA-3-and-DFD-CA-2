@@ -14,6 +14,10 @@ searchBtn.addEventListener('click', (e) => {
     fetchRecipeData(userInput);
 });
 
+document.getElementById('close-btn').addEventListener('click', (e) => {
+    modalInner.classList.add('hidden');
+})
+
 const fetchRecipeData = async (userInput) => {
     try {
         const apiResponse = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${userInput}`);
@@ -56,9 +60,11 @@ const renderRandomRecipes = (randomMealData) => {
     mealCard.append(viewRecipeCard);
 
     viewRecipeBtn.addEventListener('click', (e) => {
-        modalInner.classList.toggle('hidden');
-        document.getElementById("overlay").style.display = "block";
+        modalInner.classList.remove('hidden');
+        // document.getElementById("overlay").style.display = "block";
     })
+
+    displayIngredients(randomMealData.idMeal, randomMealData.strMealThumb );
 
     popularMealSection.appendChild(mealCard);
 };
@@ -88,9 +94,37 @@ const renderRecipes = (mealData) => {
     });
 };
 
+const displayIngredients = async (mealId, imageUrl) => {
+    try {
+        const apiResponse = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`);
+        const mealData = await apiResponse.json();
+        const meal = mealData.meals[0];
+
+        const ingredientsList = document.getElementById("modal-ingredients").querySelector('ul');
+        ingredientsList.innerHTML = ''; // Clear existing ingredients
+
+        const modalImage = document.querySelector('.modal-img');
+        modalImage.src = imageUrl;
+
+        for(let i = 1; i <= 30; i++) {
+            const ingredient = meal[`strIngredient${i}`];
+            const measure = meal[`strMeasure${i}`];
+            if(ingredient && measure) {
+                const li = document.createElement('li');
+                li.textContent = `${measure} ${ingredient}`;
+                ingredientsList.appendChild(li);
+            }
+        }
+    } catch (error) {
+        console.error('Error while fetching ingredients:', error);
+    }
+};
+
+
 
 function off() {
     document.getElementById("overlay").style.display = "none";
   }
+
 
 
