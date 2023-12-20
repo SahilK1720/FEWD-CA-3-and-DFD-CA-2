@@ -23,7 +23,6 @@ Desktop View:
 ![Screenshot (83)](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/901c5798-6655-4d40-a9e0-a9613892b890)
 ![Screenshot (84)](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/13ce1b8a-e881-4360-8ec6-de8f163e3ea4)
 ![Screenshot (85)](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/d1707500-77eb-40c0-9a5e-06e6da2aecd3)
-![Screenshot (87)](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/d154ba33-3d8f-4822-80f1-603a0ede3ff1)
 ![Screenshot (86)](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/a300705c-9c29-4efc-9a11-1db38f8f9eb0)
 ![Screenshot (88)](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/51dbadeb-b064-41b9-929f-fc2bd0f21201)
 
