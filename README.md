@@ -8,11 +8,14 @@ API Used:
 - Fetch Meal by Id: www.themealdb.com/api/json/v1/1/lookup.php?i=52772
 
 References: 
-- fonts.google.com/
-- w3schools
-- YouTube
-- Canva
+- coolors.co
+- w3schools.com
+- Youtube.com
+- pexels.com
+- Canva.com
 - remove.bg
+- fonts.google.com/specimen/Itim
+- fonts.google.com/specimen/Montez
 
 Deployed Link: https://chefscanvas.netlify.app/
 
@@ -23,6 +26,7 @@ Walkthrough Video Link: https://www.loom.com/share/547604f7e1f14a04b412a75d3a68a
 Screenshots:
 
 Desktop View:
+
 ![Screenshot (82)](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/a147e2e5-1d75-4e10-9e60-43b02a6fb27c)
 ![Screenshot (83)](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/901c5798-6655-4d40-a9e0-a9613892b890)
 ![Screenshot (84)](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/13ce1b8a-e881-4360-8ec6-de8f163e3ea4)
