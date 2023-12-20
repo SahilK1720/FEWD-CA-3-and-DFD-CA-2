@@ -12,12 +12,14 @@ References:
 - Canva
 - remove.bg
 
+Deployed Link: https://main--gentle-empanada-cdb6fa.netlify.app/
 
 Figma Link: https://www.figma.com/file/01zfljb1aPG4ZC1M15U7cQ/CA-3?type=design&node-id=0-1&mode=design&t=k8raJFHgpgg6chsM-0
 
 Walkthrough Video Link: https://www.loom.com/share/547604f7e1f14a04b412a75d3a68ab2a
 
 Screenshots:
+
 Desktop View:
 ![Screenshot (82)](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/a147e2e5-1d75-4e10-9e60-43b02a6fb27c)
 ![Screenshot (83)](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/901c5798-6655-4d40-a9e0-a9613892b890)
