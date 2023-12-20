@@ -28,11 +28,16 @@ Desktop View:
 
 Mobile View:
 
-![Screenshot 2023-12-20 105837](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/a56f04d1-4991-4239-9ebd-01a53e11e093)
-![Screenshot 2023-12-20 105807](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/4e198951-56b9-4a57-9f57-e986c20b5915)
-![Screenshot 2023-12-20 105755](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/740a5ff1-7a87-46f0-a1a9-32a7f4d088c6)
-![Screenshot 2023-12-20 105741](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/aea0775e-a9c4-4189-9c34-c1d40ff582b7)
-![Screenshot 2023-12-20 105715](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/73fdadee-62c9-45ae-9486-0ffc9f744430)
 ![Screenshot 2023-12-20 105657](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/a6073991-eeee-46fb-8421-ce6587915d0a)
+![Screenshot 2023-12-20 105715](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/73fdadee-62c9-45ae-9486-0ffc9f744430)
+![Screenshot 2023-12-20 105741](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/aea0775e-a9c4-4189-9c34-c1d40ff582b7)
+![Screenshot 2023-12-20 105755](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/740a5ff1-7a87-46f0-a1a9-32a7f4d088c6)
+![Screenshot 2023-12-20 105807](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/4e198951-56b9-4a57-9f57-e986c20b5915)
+![Screenshot 2023-12-20 105837](https://github.com/SahilK1720/FEWD-CA-3-and-DFD-CA-2/assets/144338853/a56f04d1-4991-4239-9ebd-01a53e11e093)
+
+
+
+
+
 
 
