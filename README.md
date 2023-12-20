@@ -1,9 +1,11 @@
 **About Chef's Canvas**
+ 
 Welcome to Chef's Canvas, a vibrant culinary destination where flavors meet creativity, and every dish tells a story. Our website is a treasure trove of recipes, each a masterpiece waiting to be recreated in your kitchen.
 
 API Used: 
 - Random Meal: www.themealdb.com/api/json/v1/1/random.php
-- Fetch Meal: www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
+- Fetch Meal by Category: www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
+- Fetch Meal by Id: www.themealdb.com/api/json/v1/1/lookup.php?i=52772
 
 References: 
 - fonts.google.com/
