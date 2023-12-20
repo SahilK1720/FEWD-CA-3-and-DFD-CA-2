@@ -18,21 +18,9 @@ searchBtn.addEventListener('click', (e) => {
 });
 
 // Event listener for closing the modal
-document.getElementById('close-btn').addEventListener('click', (e) => {
+document.getElementById('close-btn').addEventListener('click', () => {
     modalInner.classList.add('hidden');
 })
-
-// Async Function to fetch recipes based on user input
-const fetchRecipeData = async (userInput) => {
-    try {
-        const apiResponse = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${userInput}`);
-        const recipesData = await apiResponse.json();
-        console.log(recipesData)
-        renderRecipes(recipesData.meals);
-    } catch (error) {
-        console.error('Error while fetching recipes:', error);
-    }
-};
 
 // Async Function to fetch a random recipe
 const fetchRecipeRandomData = async () => {
@@ -77,33 +65,6 @@ const renderRandomRecipes = (randomMealData) => {
 };
 
 
-// Function to render searched recipes and display the data
-const renderRecipes = (mealData) => {
-    // Clear previous content
-    searchedMealsSection.innerHTML = '';
-
-    if (!mealData) {
-        // Display a message if no recipes are found.
-        searchedMealsSection.innerHTML = '<p>No recipes found. Try another search!</p>';
-        return;
-    }
-
-    mealData.forEach((mealItem) => {
-        const mealCard = document.createElement('div');
-        mealCard.className = 'card';
-        mealCard.innerHTML = `
-            <div class="card-image">
-                <img src="${mealItem.strMealThumb}" alt="Image of ${mealItem.strMeal}">
-            </div>
-            <div class="card-text">
-                <h3>${mealItem.strMeal}</h3>
-            </div>
-        `;
-        searchedMealsSection.appendChild(mealCard);
-    });
-};
-
-
 // Function to display ingredients of the random meal
 const displayIngredients = async (mealId, imageUrl) => {
     try {
@@ -131,8 +92,41 @@ const displayIngredients = async (mealId, imageUrl) => {
     }
 };
 
+// Async Function to fetch recipes based on user input
+const fetchRecipeData = async (userInput) => {
+    try {
+        const apiResponse = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${userInput}`);
+        const recipesData = await apiResponse.json();
+        console.log(recipesData)
+        renderRecipes(recipesData.meals);
+    } catch (error) {
+        console.error('Error while fetching recipes:', error);
+    }
+};
 
+// Function to render searched recipes and display the data
+const renderRecipes = (mealData) => {
+    // Clear previous content
+    searchedMealsSection.innerHTML = '';
 
+    if (!mealData) {
+        // Display a message if no recipes are found.
+        searchedMealsSection.innerHTML = '<p>No recipes found. Try another search!</p>';
+        return;
+    }
 
-
+    mealData.forEach((mealItem) => {
+        const mealCard = document.createElement('div');
+        mealCard.className = 'card';
+        mealCard.innerHTML = `
+            <div class="card-image">
+                <img src="${mealItem.strMealThumb}" alt="Image of ${mealItem.strMeal}">
+            </div>
+            <div class="card-text">
+                <h3>${mealItem.strMeal}</h3>
+            </div>
+        `;
+        searchedMealsSection.appendChild(mealCard);
+    });
+};
 
