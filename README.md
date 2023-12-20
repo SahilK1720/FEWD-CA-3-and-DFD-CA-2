@@ -12,7 +12,7 @@ References:
 - Canva
 - remove.bg
 
-Deployed Link: https://main--gentle-empanada-cdb6fa.netlify.app/
+Deployed Link: https://chefscanvas.netlify.app/
 
 Figma Link: https://www.figma.com/file/01zfljb1aPG4ZC1M15U7cQ/CA-3?type=design&node-id=0-1&mode=design&t=k8raJFHgpgg6chsM-0
 
