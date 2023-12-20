@@ -275,7 +275,7 @@ footer{
 }
 
 
-/* animation for search button */
+/* Animation for search button */
 @keyframes pulsate {
     0% {
       transform: scale(1);
@@ -300,6 +300,7 @@ footer{
     }
   }
 
+  /* Media query for screens below 1000px width */
   @media screen and (max-width: 1000px){
     .plate{
         flex-wrap: wrap;
@@ -349,7 +350,7 @@ footer{
     }
   }
 
-  /* for screens below 768px */
+  /* Media query for screens below 768px width */
   @media screen and (max-width: 768px){
     .plate-img{
         height: 78vh;
@@ -362,6 +363,7 @@ footer{
     }
   }
 
+  /* Media query for screens below 630px width */
   @media screen and (max-width: 630px){
 
     button{
@@ -387,6 +389,7 @@ footer{
     }
   }
 
+  /* Media query for screens below 530px width */
   @media screen and (max-width: 530px){
 
     .plate-img{
@@ -427,6 +430,7 @@ footer{
 
   }
 
+  /* Media query for screens below 450px width */
   @media screen and (max-width: 450px){
 
     .plate-img {
@@ -461,6 +465,7 @@ footer{
     } 
   }
 
+  /* Media query for screens below 400px width */
   @media screen and (max-width: 400px){
     .search-text{
         font-size: 25px;
@@ -479,6 +484,7 @@ footer{
     } 
   }
 
+  /* Media query for screens below 300px width */
   @media screen and (max-width: 300px){
     .plate-img{
         height: 30vh;
@@ -501,5 +507,3 @@ footer{
         font-size: 13px;
     } 
   }
-
-
